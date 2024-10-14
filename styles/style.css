@@ -145,6 +145,7 @@ html {
   color:#545050;
 }
 .content__list {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 26px;
