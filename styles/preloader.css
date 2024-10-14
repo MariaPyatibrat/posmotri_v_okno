@@ -6,13 +6,11 @@
   align-items: center;
   background: #545050;
 }
-
 .preloader-chasing-squares {
   width: 50px;
   height: 50px;
   line-height: 19px;
 }
-
 .preloader-chasing-squares .square {
   display: inline-block;
   width: 15px;
@@ -21,7 +19,57 @@
   background: #fff;
   animation: focusfade 2.8s infinite;
 }
-
+.content__card-link_current {
+  background: #545050;
+}
+.content__card-link {
+  display: block;
+  margin: 2px;
+  transition: background-color 0.3s, color 0.3s ease;
+  text-decoration: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.content__video-card-title, .content__video-card-description {
+  transition: text-decoration 0.3s ease;
+}
+:hover.content__card-link {
+  text-decoration: underline;
+}
+:focus-visible.content__card-link {
+  border: 1px solid #FFFFFF;
+}
+:focus.content__card-link {
+  outline: none;
+}
+.content__video-card {
+  display: flex;
+  padding:2px 2px 2px 4px;
+}
+.content__video-card-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.content__video-card-description {
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16.2px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.content__video-card-description-container {
+  width: 200px;
+}
+img {
+  width: 194px;
+  height: 107px;
+  object-fit: cover;
+}
 .preloader-chasing-squares .square:nth-child(2) {
   animation-delay: 0.7s;
 }
