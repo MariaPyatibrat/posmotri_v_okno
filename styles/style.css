@@ -113,6 +113,9 @@ html {
   transition: border-color 0.2s ease;
   color: white;
 }
+:focus-visible.search-form__textfield {
+  border: none;
+}
 .search-form__label {
   display: flex;
   align-items: center;
