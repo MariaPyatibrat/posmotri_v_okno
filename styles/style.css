@@ -162,7 +162,7 @@ html {
   text-decoration: underline;
 }
 :focus-visible.button {
-  border: 2px double #FFFFFF;
+  border: 4px double #FFFFFF;
 }
 .content__details {
   display: flex;
