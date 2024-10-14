@@ -24,7 +24,7 @@ html {
   justify-content: flex-end;
   width: 1140px;
   height: 534px;
-  gap:30px;
+  gap:29px;
 }
 .result {
   display: flex;
@@ -56,7 +56,7 @@ html {
   font-family: 'Fira Sans Condensed',sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 21.6px;
+  line-height: 30.6px;
   text-align: left;
 }
 .search-form__label {
@@ -73,7 +73,7 @@ html {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 15px;
+  gap: 9px;
 }
 .search-form__checkbox {
   position: absolute;
@@ -147,7 +147,7 @@ html {
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 26px;
   height: 298px;
   overflow-y: auto;
 }
@@ -175,7 +175,7 @@ html {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  gap: 26px;
+  gap: 24px;
 }
 .visually-hidden {
   position: absolute;
