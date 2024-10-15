@@ -162,6 +162,11 @@ ol {
   margin-bottom: 30px;
 }
 .button {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  text-align: center;
   cursor: pointer;
   background: transparent;
   color: #FFFFFF;
