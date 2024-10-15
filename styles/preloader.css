@@ -56,7 +56,7 @@
   text-transform: uppercase;
 }
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   margin-top: 4px;
   font-size: 18px;
   font-weight: 400;
