@@ -157,9 +157,70 @@ ol {
   flex-direction: column;
   height: 298px;
   overflow-y: auto;
+  /*padding: 1px;*/
 }
 .content__list-item:not(:last-of-type) {
   margin-bottom: 30px;
+}
+.content__card-link_current {
+  background: #545050;
+}
+.content__card-link:active {
+  background: #545050;
+}
+.content__card-link {
+  display: block;
+  margin: 2px;
+  transition: background-color 0.3s, color 0.3s ease;
+  text-decoration: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.content__video-card-title, .content__video-card-description {
+  transition: text-decoration 0.3s ease;
+}
+:hover.content__card-link {
+  text-decoration: underline;
+}
+:focus-visible.content__card-link {
+  border: 1px solid #FFFFFF;
+}
+:focus.content__card-link {
+  outline: none;
+}
+.content__video-card {
+  display: flex;
+  padding: 2px 0 2px 2px;
+}
+.content__video-card-title {
+  max-width: 200px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.content__video-card-description {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16.2px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.content__video-card-description-container {
+  width: 200px;
+}
+img {
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
 }
 .button {
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -172,7 +233,7 @@ ol {
   color: #FFFFFF;
   width: 100%;
   height: 34px;
-  outline: 1px solid currentColor;
+  border: 1px solid currentColor;
 }
 .button:active {
   background: #545050;
@@ -180,8 +241,11 @@ ol {
 .button:not(:active):hover {
   text-decoration: underline;
 }
+.button:focus {
+  outline: unset;
+}
 .button:focus-visible {
-  outline: thick double #FFFFFF;
+  border: 3px double currentColor;
 }
 .content__details {
   display: flex;
